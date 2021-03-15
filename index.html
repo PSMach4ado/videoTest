@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Video controle</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+
+        <div class="container">
+
+            <video id="video1" class="video" src="./assets/videoplayback.mp4">
+
+            </video>
+
+            <div  
+                class="controle"
+            >
+                <img 
+                    class="btn" 
+                    onclick="retroceder()" 
+                    src="./assets/back.png" 
+                    alt="back"
+                >
+                <img 
+                    class="btn" 
+                    onclick="diminuir_vel()" 
+                    src="./assets/fast-backward.png" 
+                    alt="fast-backward"
+                >
+                <img
+                    class="btn"
+                    id='playButton' 
+                    onclick="play()" 
+                    src="./assets/play.png" 
+                    alt="play"
+                >
+                <img 
+                    onclick='pause()' 
+                    class='btn'
+                    src="./assets/pause.png" 
+                    id='pauseButton'>
+                <img 
+                    class="btn" 
+                    onclick="stop()" 
+                    src="./assets/stop.png" 
+                    alt="stop"
+                >
+                <img 
+                    class="btn" 
+                    onclick="aumentar_vel()" 
+                    src="./assets/fast-forward.png" 
+                    alt="fast-forward"
+                >
+                <img 
+                    class="btn" 
+                    onclick="avancar()" 
+                    src="./assets/forward.png" 
+                    alt="forward"
+                >
+            </div>
+
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
